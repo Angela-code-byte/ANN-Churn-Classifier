@@ -4,10 +4,12 @@ import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 import pandas as pd
 import pickle
+import os
+model_path = os.path.join(os.path.dirname(__file__), 'model.keras')
 
 
 #load trained model
-model = tf.keras.models.load_model('model.keras')
+model = tf.keras.models.load_model(model_path)
 
 #Load the encoders and scalar
 
