@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 import pandas as pd
 import pickle
 import os
-model_path = os.path.join(os.path.dirname(__file__), 'model.keras')
+model_path = os.path.join(os.path.dirname(__file__), 'model.h5')
 
 
 #load trained model
